@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+    <div align="center">
+        <h3 style="color:green;"> <i>Do you want to delete?</i></h3>
+        <br><br><br>
+        <input type="submit" class="btn btn-danger" alt="Delete">
+    </div>
+ {% endblock %}
+</form>
